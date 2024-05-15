@@ -23,8 +23,22 @@ const validationSchema = yup.object({
 </script>
 
 <template>
-  <OpoForm :validation-schema>
-    <OpoField :name="loginName" :label="loginLabel" />
+  <OpoForm :validation-schema="validationSchema" label-nesting="inner">
+    <OpoField :name="loginName" label-type="top" :label="loginLabel" />
+    <OpoField :name="loginName" label-type="top-left" :label="loginLabel" />
+    <OpoField :name="loginName" label-type="top-right" :label="loginLabel" />
+    <OpoField :name="loginName" label-type="bottom" :label="loginLabel" />
+    <OpoField :name="loginName" label-type="bottom-left" :label="loginLabel" />
+    <OpoField :name="loginName" label-type="bottom-right" :label="loginLabel" />
+    <OpoField :name="loginName" label-type="left" :label="loginLabel" />
+    <OpoField :name="loginName" label-type="right" :label="loginLabel" />
+    <OpoField :name="loginName" label-type="hidden" :label="loginLabel" />
     <OpoField :name="passwordName" :label="passwordLabel" error-message-type="fatal" />
   </OpoForm>
 </template>
+
+<style>
+body {
+  background-color: #676767;
+}
+</style>

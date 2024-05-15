@@ -1,2 +1,2 @@
-export { default as OpoField } from './lib/OpoField.vue'
-export { default as OpoForm } from './lib/OpoForm.vue'
+export * from './lib/OpoField'
+export * from './lib/OpoForm'

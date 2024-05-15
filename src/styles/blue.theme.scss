@@ -1,0 +1,15 @@
+$main-color: #2372a2;
+$main-color-darken: darken($main-color, 10%);
+
+$sub-color: #2333a2;
+
+$text-color: #cdf;
+$text-color-darken: darken($text-color, 10%);
+
+:root {
+  --main-color: #{$main-color};
+  --main-color-darken: #{$main-color-darken};
+  --sub-color: #{$sub-color};
+  --text-color: #{$text-color};
+  --text-color-darken: #{$text-color-darken};
+}

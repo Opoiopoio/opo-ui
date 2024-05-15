@@ -35,6 +35,8 @@
     "@types/node": "^20.12.11",
     "@vee-validate/rules": "^4.12.8",
     "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^9.2.0",
+    "eslint-plugin-vue": "^9.26.0",
     "sass": "^1.77.0",
     "sass-loader": "^14.2.1",
     "storybook": "^8.0.10",

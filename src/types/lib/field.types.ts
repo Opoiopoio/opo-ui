@@ -9,18 +9,27 @@ export type LabelType =
   | 'right'
   | 'hidden'
 export type LabelNesting = 'inner' | 'outer'
-export type LabelPosition = 'after' | 'before' | 'none'
-
-export const LabelPositionEnum: Record<LabelType, LabelPosition> = {
-  top: 'before',
-  'top-left': 'before',
-  'top-right': 'before',
-  bottom: 'after',
-  'bottom-left': 'after',
-  'bottom-right': 'after',
-  hidden: 'none',
-  left: 'before',
-  right: 'after',
-}
 
 export type ErrorMessageType = 'warn' | 'fatal'
+
+export const labelTypes: Record<string, LabelType> = {
+  bottom: 'bottom',
+  bottomLeft: 'bottom-left',
+  bottomRight: 'bottom-right',
+  hidden: 'hidden',
+  left: 'left',
+  right: 'right',
+  top: 'top',
+  topLeft: 'top-left',
+  topRight: 'top-right',
+} as const
+
+export const labelNestings: Record<LabelNesting, true> = {
+  inner: true,
+  outer: true,
+} as const
+
+export const errorMessageTypes: Record<ErrorMessageType, true> = {
+  fatal: true,
+  warn: true,
+} as const
